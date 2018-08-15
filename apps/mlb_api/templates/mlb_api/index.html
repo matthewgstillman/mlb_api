@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock%}
+
+
+{% block content %}
+<div class="container">
+    <h1>MLB API</h1>
+    <h6>Games</h6>
+    {% for game in games %}
+        <h6>{{ game }}</h6>
+    {% endfor %}
+</div>
+{% endblock %}
